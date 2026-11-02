@@ -1,0 +1,390 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26352e;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background: #173f35;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h2 {
+    letter-spacing: 3px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #d8cba9;
+}
+
+.simbol {
+    border: 2px solid #d8ad63;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e8bd70;
+}
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 9%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(13,42,31,.9), rgba(13,42,31,.35)),
+        url("sat.jpg") center/cover no-repeat,
+        #315d46;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitlu,
+.eticheta {
+    color: #c99c51;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 75px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitlu) {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buton {
+    display: inline-block;
+    background: #d8ad63;
+    color: #173f35;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.buton:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.statistici {
+    background: #f5f3eb;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 35px 6%;
+    gap: 20px;
+    text-align: center;
+}
+
+.statistici h2 {
+    color: #285b49;
+    font-size: 28px;
+}
+
+.statistici p {
+    font-size: 13px;
+}
+
+.sectiune {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.sectiune h2,
+.istorie h2,
+.dezvoltare h2 {
+    font-size: 38px;
+    color: #173f35;
+    margin-bottom: 35px;
+}
+
+.despre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    text-align: left;
+}
+
+.despre-text p {
+    margin-bottom: 17px;
+    color: #65736a;
+}
+
+.despre-card {
+    min-height: 260px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #173f35, #47785b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    text-align: center;
+}
+
+.despre-card h3 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.istorie {
+    background: #f5f3eb;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.istorie-card {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #0000000c;
+}
+
+.istorie-card span {
+    display: block;
+    color: #b4863c;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.text-centru {
+    max-width: 650px;
+    margin: auto;
+    color: #65736a;
+}
+
+.institutii {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    text-align: left;
+}
+
+.card {
+    border: 1px solid #e5e9e4;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px #00000009;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px #00000018;
+}
+
+.pictograma {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #173f35;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #65736a;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    color: #285b49;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.dezvoltare {
+    background: #173f35;
+    color: white;
+    padding: 80px 9%;
+    text-align: center;
+}
+
+.dezvoltare h2 {
+    color: white;
+}
+
+.dezvoltare p {
+    max-width: 700px;
+    margin: 12px auto;
+    color: #dce6df;
+}
+
+.dezvoltare a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e8bd70;
+    font-weight: bold;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    border: 1px solid #e5e9e4;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #0000000c;
+}
+
+.contact-card h3 {
+    color: #173f35;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    margin: 8px;
+}
+
+.contact-card .buton {
+    margin-top: 20px;
+}
+
+.harta {
+    max-width: 850px;
+    margin: 50px auto 0;
+}
+
+.harta h3 {
+    color: #173f35;
+    font-size: 25px;
+}
+
+.harta iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #102d25;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    color: #e8bd70;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #cbd8cf;
+    margin: 5px;
+}
+
+@media (max-width: 850px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .statistici {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .institutii {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .despre {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        min-height: 470px;
+        padding: 45px 7%;
+    }
+
+    .statistici {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .institutii {
+        grid-template-columns: 1fr;
+    }
+
+    .sectiune h2,
+    .istorie h2,
+    .dezvoltare h2 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
